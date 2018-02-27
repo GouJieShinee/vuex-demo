@@ -21,7 +21,7 @@
               <div class="detail-scale flex detail-mul">
                   <div class="detail-l-tit">外观：</div>
                   <div class="detail-r-info flex-con">
-                      <span class="good-color" @click="changeColor">金色</span>
+                      <span class="good-color neicun-active" @click="changeColor">金色</span>
                       <span class="good-color">黑色</span>
                       <span class="good-color">灰色</span>
                   </div>
@@ -35,7 +35,7 @@
                   </div>
               </div>
 
-              <div class="add-btn">
+              <div class="add-btn" @click="addToCart">
                   <a href="javascript:void(0)">加入购物车</a>
               </div>
               
@@ -70,7 +70,12 @@ export default {
       });
     },
     // 选择商品颜色，切换左侧的图片
-    changeColor() {}
+    changeColor() {},
+    addToCart() {
+      this.$store.dispatch("addToCart", {
+        goodId: 10
+      });
+    }
   }
 };
 </script>

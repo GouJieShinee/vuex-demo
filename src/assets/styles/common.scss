@@ -29,6 +29,8 @@ li {
 body,
 html {
   min-width: 320px;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -40,6 +42,22 @@ a {
   display: flex;
 }
 
+.flex-wrap {
+  flex-direction: column
+}
+
 .flex-con {
   flex: 1;
+}
+
+.flex-vcenter {
+  align-items: center
+}
+
+.align-center {
+  text-align: center
+}
+
+.align-r {
+  text-align: right
 }

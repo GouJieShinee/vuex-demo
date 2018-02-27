@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="flex flex-wrap">
     <Nav></Nav>
-    <router-view></router-view>
+    <div class="flex-con">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -17,6 +19,8 @@ export default {
 
 <style>
 #app {
+  width: 100%;
+  height: 100%;
   min-width: 320px;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
